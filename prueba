@@ -1,0 +1,7 @@
+let beaconManager = ESTBeaconManager(delegate: self)
+beaconManager.startMonitoringForRegion(entranceBeacon)
+func beaconManager(manager: ESTBeaconManager!, didEnterRegion region: ESTBeaconRegion!)
+{if (region.identifier == "entranceBeacon") {
+showWelcomeNotification("hello, pPHysical Wold")
+}
+}
